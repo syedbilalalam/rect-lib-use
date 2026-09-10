@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
-project(RECT_LIB_USE)
+project(RectLibUse)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# loading library directory
+add_subdirectory(external/my_rect_lib)
 
-add_executable(RECT_LIB_USE src/main.cpp)
+# executable
+add_executable(RectLibUse src/main.cpp)
+
+target_link_libraries(RectLibUse PRIVATE MyRectLib)
