@@ -1,0 +1,3 @@
+[submodule "external/my_rect_lib"]
+	path = external/my_rect_lib
+	url = https://github.com/syedbilalalam/my-rect-lib.git
